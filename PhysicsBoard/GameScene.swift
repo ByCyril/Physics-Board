@@ -33,7 +33,7 @@ class GameScene: SKScene {
 
 //        create the node
         let node = SKSpriteNode(imageNamed: "emoji\(i)")
-        node.size = CGSize(width: 50, height: 50)
+        node.size = CGSize(width: 30, height: 30)
         node.position = position
         
 //        add the physics body
@@ -83,7 +83,7 @@ class GameScene: SKScene {
         
         guard let acc = motionManager.accelerometerData?.acceleration else { return }
         
-        let harshness: Double = 75
+        let harshness: Double = 50
         physicsWorld.gravity = CGVector(dx: acc.x * harshness, dy: acc.y * harshness)
         
     }
