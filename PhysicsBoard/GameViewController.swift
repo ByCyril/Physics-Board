@@ -37,6 +37,7 @@ class GameViewController: UIViewController {
         guard let skView = view as? SKView else { return }
         guard let scene = skView.scene as? GameScene else { return }
         scene.clearScene()
+        
     }
 
     override var prefersStatusBarHidden: Bool {

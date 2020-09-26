@@ -26,6 +26,9 @@ class GameScene: SKScene {
     }
   
     func createNode(at position: CGPoint) {
+//        This is for the emoji names.
+//        You may not need it if you are using
+//        a single image
         let i = Int.random(in: 1...85)
 
 //        create the node
@@ -45,18 +48,27 @@ class GameScene: SKScene {
     
     func clearScene() {
         for node in nodes {
+//            create the scaling affect
             let scale = SKAction.scale(by: 0, duration: 1.25)
+            
+//            remove the node from the parent
             let remove = SKAction.run {
                 node.removeFromParent()
             }
-            let rotationAngle: CGFloat = 2 * CGFloat.pi
             
+//            create the rotation affect
+            let rotationAngle: CGFloat = 2 * CGFloat.pi
             let rotate = SKAction.repeatForever(SKAction.rotate(byAngle: rotationAngle, duration: 0.35))
+            
+//            create a sequence where we run the scaling and removing affect
             let sequence = SKAction.sequence([scale, SKAction.wait(forDuration: 0.25), remove])
+            
+//            rotate the nodes and run it with the scaling and removing affect/
             node.run(rotate)
             node.run(sequence)
         }
         
+//        then remove all references of the nodes
         nodes.removeAll()
     }
     
@@ -71,8 +83,8 @@ class GameScene: SKScene {
         
         guard let acc = motionManager.accelerometerData?.acceleration else { return }
         
-        let padding: Double = 75
-        physicsWorld.gravity = CGVector(dx: acc.x * padding, dy: acc.y * padding)
+        let harshness: Double = 75
+        physicsWorld.gravity = CGVector(dx: acc.x * harshness, dy: acc.y * harshness)
         
     }
 }
