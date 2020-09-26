@@ -78,9 +78,6 @@ We can create our `clearScene()` method because, why not :)
 //        then remove all references of the nodes
         nodes.removeAll()
     }
-    
-        nodes.removeAll()
-    }
  ```
  
  ### Step 5 - Where the magic happens
