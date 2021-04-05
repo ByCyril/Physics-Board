@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0182E561261BB39C00FAF899 /* JarScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0182E560261BB39C00FAF899 /* JarScene.swift */; };
 		01C3F697251F9D9F00834B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3F696251F9D9F00834B9A /* AppDelegate.swift */; };
 		01C3F699251F9D9F00834B9A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 01C3F698251F9D9F00834B9A /* GameScene.sks */; };
 		01C3F69B251F9D9F00834B9A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 01C3F69A251F9D9F00834B9A /* Actions.sks */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0182E560261BB39C00FAF899 /* JarScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarScene.swift; sourceTree = "<group>"; };
 		01C3F693251F9D9F00834B9A /* PhysicsBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C3F696251F9D9F00834B9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01C3F698251F9D9F00834B9A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				01C3F698251F9D9F00834B9A /* GameScene.sks */,
 				01C3F69A251F9D9F00834B9A /* Actions.sks */,
 				01C3F69C251F9D9F00834B9A /* GameScene.swift */,
+				0182E560261BB39C00FAF899 /* JarScene.swift */,
 				01C3F69E251F9D9F00834B9A /* GameViewController.swift */,
 				01C3F6A0251F9D9F00834B9A /* Main.storyboard */,
 				01C3F6A3251F9DA100834B9A /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0182E561261BB39C00FAF899 /* JarScene.swift in Sources */,
 				01C3F69D251F9D9F00834B9A /* GameScene.swift in Sources */,
 				01C3F69F251F9D9F00834B9A /* GameViewController.swift in Sources */,
 				01C3F697251F9D9F00834B9A /* AppDelegate.swift in Sources */,
